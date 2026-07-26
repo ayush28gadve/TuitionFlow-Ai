@@ -1,14 +1,19 @@
 import { useState } from 'react'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
-import HowItWorks from './components/HowItWorks.jsx'
-import Features from './components/Features.jsx'
+import LiveFlow from './components/LiveFlow.jsx'
+import Benefits from './components/Benefits.jsx'
+import Comparison from './components/Comparison.jsx'
+import RoiCalculator from './components/RoiCalculator.jsx'
+import UseCases from './components/UseCases.jsx'
 import Stats from './components/Stats.jsx'
+import CtaBand from './components/CtaBand.jsx'
 import Footer from './components/Footer.jsx'
 import ChatbotWidget from './components/ChatbotWidget.jsx'
 
 export default function App() {
   const [chatOpen, setChatOpen] = useState(false)
+  const openChat = () => setChatOpen(true)
 
   return (
     <>
@@ -19,11 +24,15 @@ export default function App() {
       </div>
       <div className="grain" />
 
-      <Nav onOpenChat={() => setChatOpen(true)} />
-      <Hero onOpenChat={() => setChatOpen(true)} />
-      <HowItWorks />
-      <Features />
+      <Nav onOpenChat={openChat} />
+      <Hero onOpenChat={openChat} />
+      <LiveFlow />
+      <Benefits />
+      <Comparison />
+      <RoiCalculator />
+      <UseCases />
       <Stats />
+      <CtaBand onOpenChat={openChat} />
       <Footer />
 
       <div className="demo-tag">⚡ Live demo by DevLance</div>

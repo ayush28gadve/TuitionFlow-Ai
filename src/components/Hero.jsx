@@ -8,36 +8,36 @@ const fadeUp = {
 export default function Hero({ onOpenChat }) {
   return (
     <header className="hero">
-      <div className="float-chip chip-1">✅ Trial booked — Tue 4 PM</div>
-      <div className="float-chip chip-2">📊 CRM updated automatically</div>
-      <div className="float-chip chip-3">📧 Tutor notified instantly</div>
-      <div className="float-chip chip-4">💬 Parent confirmed on WhatsApp</div>
+      <div className="float-chip chip-1">💬 "What are your fees?" — answered in 2s</div>
+      <div className="float-chip chip-2">📊 Lead captured → CRM updated</div>
+      <div className="float-chip chip-3">📅 Booking confirmed — 11:42 PM</div>
+      <div className="float-chip chip-4">😴 Business owner: asleep</div>
 
       <div className="container">
         <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0}>
-          <span className="badge"><span className="dot" /> AI Assistant · Online 24/7</span>
+          <span className="badge"><span className="dot" /> DevLance AI Showcase · Live Demo</span>
         </motion.div>
 
         <motion.h1 variants={fadeUp} initial="hidden" animate="show" custom={1}>
-          Your tuition academy,<br />
-          <span className="grad-text">on autopilot.</span>
+          The AI assistant that<br />
+          <span className="grad-text">never misses a lead.</span>
         </motion.h1>
 
         <motion.p className="sub" variants={fadeUp} initial="hidden" animate="show" custom={2}>
-          Meet the AI assistant that talks to parents, qualifies every enquiry, books
-          trial lessons with the right tutor, updates your CRM and notifies everyone —
-          while you sleep.
+          This entire website is a live demo. The business behind it is just an example —
+          the real product is the AI assistant in the corner. It answers customers,
+          qualifies leads, books appointments and updates your CRM. 24/7. Automatically.
         </motion.p>
 
         <motion.div className="hero-ctas" variants={fadeUp} initial="hidden" animate="show" custom={3}>
           <button className="btn btn-primary btn-lg" onClick={onOpenChat}>
-            🤖 Book a trial lesson — live demo
+            🤖 Talk to the AI — it's live
           </button>
-          <a className="btn btn-ghost btn-lg" href="#how">See how it works</a>
+          <a className="btn btn-ghost btn-lg" href="#flow">Watch the automation</a>
         </motion.div>
 
         <motion.p className="hero-note" variants={fadeUp} initial="hidden" animate="show" custom={4}>
-          ↓ Click the button and experience the exact journey a parent takes ↓
+          Real bookings. Real CRM updates. Real emails. Try it yourself ↘
         </motion.p>
       </div>
     </header>

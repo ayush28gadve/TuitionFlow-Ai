@@ -10,9 +10,9 @@ export default function Nav({ onOpenChat }) {
           <span className="logo-by">by {BRAND.agency}</span>
         </div>
         <div className="nav-links">
-          <a href="#how">How it works</a>
-          <a href="#features">Features</a>
-          <a href="#results">Results</a>
+          <a href="#flow">Live flow</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#roi">ROI</a>
           <button className="btn btn-primary" onClick={onOpenChat}>
             Try the AI Assistant
           </button>
