@@ -19,7 +19,13 @@ export default function CtaBand({ onOpenChat }) {
           </p>
           <div className="hero-ctas">
             <button className="btn btn-primary btn-lg" onClick={onOpenChat}>🤖 Experience it first</button>
-            <a className="btn btn-ghost btn-lg" href={`https://${BRAND.site}`} target="_blank" rel="noreferrer">Visit {BRAND.site}</a>
+            <a className="btn btn-ghost btn-lg" href={`mailto:${BRAND.email}`}>📧 Email us</a>
+            <a className="btn btn-ghost btn-lg" href={`https://wa.me/${BRAND.whatsapp}`} target="_blank" rel="noreferrer">💬 WhatsApp us</a>
+          </div>
+          <div className="contact-row">
+            <a className="contact-link" href={`mailto:${BRAND.email}`}>✉️ {BRAND.email}</a>
+            <span className="contact-sep">·</span>
+            <a className="contact-link" href={`https://wa.me/${BRAND.whatsapp}`} target="_blank" rel="noreferrer">📱 {BRAND.phone}</a>
           </div>
         </motion.div>
       </div>

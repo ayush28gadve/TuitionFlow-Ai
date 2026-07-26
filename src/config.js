@@ -8,6 +8,9 @@ export const BRAND = {
   agency: 'DevLance',
   site: 'www.devlance.studio',
   founder: 'Ayush Kailash Gadve',
+  email: 'devlance.head@gmail.com',
+  phone: '+91 7558575837',
+  whatsapp: '917558575837',
 }
 
 export const TUTORS = [
