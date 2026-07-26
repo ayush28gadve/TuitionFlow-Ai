@@ -60,7 +60,7 @@ export default function ChatbotWidget({ open, setOpen }) {
   useEffect(() => {
     if (open && !startedRef.current) {
       startedRef.current = true
-      botSay("Hi! 👋 I'm Nova, this academy's AI assistant. I can answer your questions or book a free trial lesson in under 2 minutes.", null, 800)
+      botSay("Hi! 👋 I'm Ayush, this academy's AI assistant. I can answer your questions or book a free trial lesson in under 2 minutes.", null, 800)
       setTimeout(() => botSay('Which subject does your child need help with? You can also type or speak any question below. 🎙️', 'subject', 900), 1000)
     }
   }, [open])
@@ -225,14 +225,14 @@ export default function ChatbotWidget({ open, setOpen }) {
             <div className="chat-head">
               <div className="avatar"><BotFace /></div>
               <div className="info">
-                <h4>Nova — AI Assistant</h4>
+                <h4>Ayush — AI Assistant</h4>
                 <div className="status">Online · replies instantly</div>
               </div>
               <button className="chat-close" onClick={() => setOpen(false)}>✕</button>
             </div>
 
             <div className="demo-note">
-              ⚡ <b>Demo version</b> — connected to your institution's real data, Nova answers with your actual pricing, courses and schedules.
+              ⚡ <b>Demo version</b> — connected to your institution's real data, Ayush answers with your actual pricing, courses and schedules.
             </div>
 
             <div className="chat-body" ref={bodyRef}>
