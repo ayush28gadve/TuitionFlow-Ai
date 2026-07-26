@@ -11,7 +11,7 @@ export default function RoiCalculator() {
   const hoursSaved = Math.round(enquiries * 0.25)
   const yearlyGain = monthlyGain * 12
 
-  const fmt = (n) => '£' + n.toLocaleString('en-GB')
+  const fmt = (n) => '$' + n.toLocaleString('en-US')
 
   return (
     <section id="roi">
